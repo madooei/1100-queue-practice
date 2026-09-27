@@ -18,11 +18,8 @@ public final class Josephus {
 
   // Returns the index of the next person who is still in the game.
   private static int nextAlive(int current, boolean[] eliminated) {
-    int i = (current + 1) % eliminated.length;
-    while (eliminated[i]) {
-      i = (i + 1) % eliminated.length;  // skip over eliminated people
-    }
-    return i;
+    // TODO: Implement me
+    throw new UnsupportedOperationException("TODO: Implement me");
   }
 
   // Returns the number of the survivor. Assumes n and k are at least 1.

@@ -46,12 +46,7 @@ public class StackQueue<T> implements Queue<T> {
 
   // if out is empty, move everything from in to out, reversing the order
   private void pour() {
-    if (out.isEmpty()) {
-      while (!in.isEmpty()) {
-        T item = in.top();
-        in.pop();
-        out.push(item);
-      }
-    }
+    // TODO: Implement me
+    throw new UnsupportedOperationException("TODO: Implement me");
   }
 }
