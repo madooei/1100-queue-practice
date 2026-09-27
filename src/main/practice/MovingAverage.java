@@ -13,27 +13,14 @@ public class MovingAverage {
 
   // Throws IllegalArgumentException if k is less than 1.
   public MovingAverage(int k) {
-    if (k < 1) {
-      throw new IllegalArgumentException();
-    }
-    this.k = k;
-    window = new LinkedQueue<>();
-    count = 0;
-    sum = 0;
+    // TODO: Implement me
+    throw new UnsupportedOperationException("TODO: Implement me");
   }
 
   // Records reading and returns the average of the last k readings, or of
   // all the readings so far if fewer than k have arrived.
   public double add(int reading) {
-    window.enqueue(reading);
-    sum += reading;
-    count++;
-    if (count > k) {
-      int oldest = window.front();  // look at the reading that must leave
-      window.dequeue();             // then remove it
-      sum -= oldest;
-      count--;
-    }
-    return (double) sum / count;
+    // TODO: Implement me
+    throw new UnsupportedOperationException("TODO: Implement me");
   }
 }

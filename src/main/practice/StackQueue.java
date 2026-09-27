@@ -22,33 +22,26 @@ public class StackQueue<T> implements Queue<T> {
 
   @Override
   public void enqueue(T item) {
-    if (item == null) {
-      throw new IllegalArgumentException();
-    }
-    in.push(item);
+    // TODO: Implement me
+    throw new UnsupportedOperationException("TODO: Implement me");
   }
 
   @Override
   public void dequeue() {
-    if (isEmpty()) {
-      throw new NoSuchElementException();
-    }
-    pour();
-    out.pop();
+    // TODO: Implement me
+    throw new UnsupportedOperationException("TODO: Implement me");
   }
 
   @Override
   public T front() {
-    if (isEmpty()) {
-      throw new NoSuchElementException();
-    }
-    pour();
-    return out.top();
+    // TODO: Implement me
+    throw new UnsupportedOperationException("TODO: Implement me");
   }
 
   @Override
   public boolean isEmpty() {
-    return in.isEmpty() && out.isEmpty();
+    // TODO: Implement me
+    throw new UnsupportedOperationException("TODO: Implement me");
   }
 
   // if out is empty, move everything from in to out, reversing the order
