@@ -5,6 +5,6 @@ public class JosephusQueueTest extends JosephusTest {
 
   @Override
   protected int survivor(int n, int k) {
-    return Josephus.survivor(n, k);
+    return JosephusQueue.survivor(n, k);
   }
 }

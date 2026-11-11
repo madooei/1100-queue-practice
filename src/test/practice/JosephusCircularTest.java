@@ -5,6 +5,6 @@ public class JosephusCircularTest extends JosephusTest {
 
   @Override
   protected int survivor(int n, int k) {
-    return Josephus.survivorCircular(n, k);
+    return JosephusCircular.survivor(n, k);
   }
 }

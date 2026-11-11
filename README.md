@@ -26,7 +26,9 @@ code/
         LinkedStack.java              # linked Stack (copied from the Stack chapter)
       practice/
         RoundRobin.java               # task completion times
-        Josephus.java                 # the survivor (3 solutions)
+        JosephusBruteForce.java       # the survivor, with a boolean array
+        JosephusQueue.java            # the survivor, by rotating a queue
+        JosephusCircular.java         # the survivor, with a circularly linked list
         MovingAverage.java            # average of the last k readings
         StackQueue.java               # a Queue built from two Stacks
     test/
@@ -35,9 +37,9 @@ code/
       practice/
         RoundRobinTest.java           # scenarios for round-robin scheduling
         JosephusTest.java             # abstract: the Josephus scenarios
-        JosephusBruteForceTest.java   # runs them against the boolean-array solution
-        JosephusQueueTest.java        # runs them against the queue solution
-        JosephusCircularTest.java     # runs them against the circularly linked list solution
+        JosephusBruteForceTest.java   # runs them against JosephusBruteForce
+        JosephusQueueTest.java        # runs them against JosephusQueue
+        JosephusCircularTest.java     # runs them against JosephusCircular
         MovingAverageTest.java        # tests for MovingAverage
         StackQueueTest.java           # runs the Queue contract suite against StackQueue
   scripts/
@@ -53,11 +55,13 @@ There is no demo program for these problems; the tests are how you check your wo
 
 ## What's here
 
-- `queue.Queue<T>`, `queue.LinkedQueue<T>`, `queue.ArrayQueue<T>`, and `queue.QueueTest` — unchanged copies from the chapter. `RoundRobin` and `MovingAverage` use `LinkedQueue`, `Josephus` uses `ArrayQueue`, `StackQueue` implements `Queue`, and `StackQueueTest` extends `QueueTest`, so they are included here to keep this code self-contained.
+- `queue.Queue<T>`, `queue.LinkedQueue<T>`, `queue.ArrayQueue<T>`, and `queue.QueueTest` — unchanged copies from the chapter. `RoundRobin` and `MovingAverage` use `LinkedQueue`, `JosephusQueue` uses `ArrayQueue`, `StackQueue` implements `Queue`, and `StackQueueTest` extends `QueueTest`, so they are included here to keep this code self-contained.
 - `stack.Stack<T>` and `stack.LinkedStack<T>` — unchanged copies from the Stack chapter. `StackQueue` uses them as its two stacks.
 - `practice.RoundRobin` — computes when each task finishes under round-robin scheduling.
 - `practice.RoundRobinTest` — the round-robin scenarios.
-- `practice.Josephus` — three solutions side by side: the boolean-array first attempt, the queue solution, and the circularly linked list.
+- `practice.JosephusBruteForce` — `survivor`, the first attempt, which marks eliminated people in a boolean array.
+- `practice.JosephusQueue` — `survivor`, which rotates the circle through a queue.
+- `practice.JosephusCircular` — `survivor`, which unlinks people from a circularly linked list.
 - `practice.JosephusTest` — the abstract scenario suite for the Josephus problem. It has one subclass per solution, so you can test one solution alone.
 - `practice.MovingAverage` — reports the average of the last `k` readings each time a reading is added.
 - `practice.MovingAverageTest` — tests for `MovingAverage`.
