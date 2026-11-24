@@ -31,6 +31,13 @@ code/
         JosephusCircular.java         # the survivor, with a circularly linked list
         MovingAverage.java            # average of the last k readings
         StackQueue.java               # a Queue built from two Stacks
+      demo/                           # one demo per solution class
+        RoundRobinDemo.java
+        JosephusBruteForceDemo.java
+        JosephusQueueDemo.java
+        JosephusCircularDemo.java
+        MovingAverageDemo.java
+        StackQueueDemo.java
     test/
       queue/
         QueueTest.java                # abstract: the Queue contract suite (copied from the chapter)
@@ -44,14 +51,14 @@ code/
         StackQueueTest.java           # runs the Queue contract suite against StackQueue
   scripts/
     test.sh                           # compile and run every JUnit test
+    run.sh                            # compile and run one demo
 ```
 
 ## How to compile and run
 
 - `scripts/test.sh` — compiles everything and runs the full JUnit suite.
 - `scripts/test.sh practice.JosephusBruteForceTest` — compiles everything and runs only that test class. Use this while you are working on one problem or one solution and the others are still empty.
-
-There is no demo program for these problems; the tests are how you check your work.
+- `scripts/run.sh demo.JosephusQueueDemo` — compiles everything and runs that one demo. Every class you implement has its own demo, `<Class>Demo`.
 
 ## What's here
 
@@ -67,3 +74,4 @@ There is no demo program for these problems; the tests are how you check your wo
 - `practice.MovingAverageTest` — tests for `MovingAverage`.
 - `practice.StackQueue` — a `Queue` that uses two stacks as its only storage.
 - `practice.StackQueueTest` — runs the full `Queue` contract suite against `StackQueue`.
+- `demo.RoundRobinDemo`, `demo.JosephusBruteForceDemo`, `demo.JosephusQueueDemo`, `demo.JosephusCircularDemo`, `demo.MovingAverageDemo`, and `demo.StackQueueDemo` — one demo per solution class, each on an example from the notes.
