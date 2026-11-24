@@ -60,7 +60,7 @@ code/
 - `scripts/test.sh practice.JosephusBruteForceTest` — compiles everything and runs only that test class. Use this while you are working on one problem or one solution and the others are still empty.
 - `scripts/run.sh demo.JosephusQueueDemo` — compiles everything and runs that one demo. Every class you implement has its own demo, `<Class>Demo`.
 
-## What's here
+## Contents
 
 - `queue.Queue<T>`, `queue.LinkedQueue<T>`, `queue.ArrayQueue<T>`, and `queue.QueueTest` — unchanged copies from the chapter. `RoundRobin` and `MovingAverage` use `LinkedQueue`, `JosephusQueue` uses `ArrayQueue`, `StackQueue` implements `Queue`, and `StackQueueTest` extends `QueueTest`, so they are included here to keep this code self-contained.
 - `stack.Stack<T>` and `stack.LinkedStack<T>` — unchanged copies from the Stack chapter. `StackQueue` uses them as its two stacks.
